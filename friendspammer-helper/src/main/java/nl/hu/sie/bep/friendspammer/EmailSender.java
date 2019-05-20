@@ -1,4 +1,4 @@
-package src.nl.hu.sie.bep.friendspammer;
+package nl.hu.sie.bep.friendspammer;
 
 import java.util.Properties;
 
@@ -56,9 +56,9 @@ public class EmailSender {
 		props.put("mail.smtp.host", "smtp.mailtrap.io");
 		props.put("mail.smtp.port", "2525");
 		props.put("mail.smtp.auth", "true");
-		
-		String username = "YOUR MAIL USERNAME";
-		String password = "YOUR MAIL PASSWORD";
+
+    String username = "42c2290a3b08cb";
+    String password = "3befb4c6f8a5a1";
 
 		Session session = Session.getInstance(props,
 				  new javax.mail.Authenticator() {
