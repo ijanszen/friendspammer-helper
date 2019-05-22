@@ -2,32 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c5cfaa9-8ee8-4f7c-b3a8-023fea398692" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../friendspammer-web/friendspammer-web.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/friendspammer-helper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/friendspammer-helper.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/friendspammer-helper.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/friendspammer-helper.ipr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/friendspammer-helper.iws" beforeDir="false" afterPath="$PROJECT_DIR$/friendspammer-helper.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WebContent/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WebContent/WEB-INF/lib/javax.activation-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WebContent/WEB-INF/lib/javax.mail.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WebContent/WEB-INF/lib/mongo-java-driver-3.6.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WebContent/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WebContent/history.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WebContent/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WebContent/mongo-java-driver-3.6.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lib/javax.mail.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lib/mongo-java-driver-3.6.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/src/nl/hu/sie/bep/friendspammer/EmailSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/EmailSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/src/nl/hu/sie/bep/friendspammer/MongoSaver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/MongoSaver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/nl/hu/sie/bep/friendspammer/EmailSender$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/nl/hu/sie/bep/friendspammer/EmailSender$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/nl/hu/sie/bep/friendspammer/EmailSender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/nl/hu/sie/bep/friendspammer/MongoSaver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/friendspammer-helper-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/friendspammer-helper/friendspammer-helper.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/friendspammer-helper/friendspammer-helper.ipr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/friendspammer-helper/friendspammer-helper.iws" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/friendspammer-helper/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/friendspammer-helper/src/main/java/nl/hu/sie/bep/friendspammer/EmailSender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/friendspammer-helper/src/main/java/nl/hu/sie/bep/friendspammer/MongoSaver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/friendspammer-helper/target/classes/nl/hu/sie/bep/friendspammer/EmailSender$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/friendspammer-helper/target/classes/nl/hu/sie/bep/friendspammer/EmailSender$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/friendspammer-helper/target/classes/nl/hu/sie/bep/friendspammer/EmailSender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/friendspammer-helper/target/classes/nl/hu/sie/bep/friendspammer/MongoSaver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/friendspammer-helper/target/friendspammer-helper-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/friendspammer-helper/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/friendspammer-helper/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/friendspammer-helper/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/friendspammer-helper/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/friendspammer-web/friendspammer-web.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,7 +35,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-595">
+            <state relative-caret-position="272">
               <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
             </state>
           </provider>
@@ -54,7 +44,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/EmailSender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
+            <state relative-caret-position="952">
               <caret line="64" column="72" selection-start-line="64" selection-start-column="72" selection-end-line="64" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -67,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/MongoSaver.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+              <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,7 +68,7 @@
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -117,38 +107,6 @@
               <item name="friendspammer-helper" type="b2602c69:ProjectViewProjectNode" />
               <item name="friendspammer-helper" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="friendspammer-helper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="friendspammer-helper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="friendspammer-helper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="friendspammer-helper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="friendspammer-helper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="friendspammer-helper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="friendspammer-helper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="friendspammer-helper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="friendspammer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="friendspammer-helper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="friendspammer-helper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -164,6 +122,7 @@
     <property name="editor.config.ad.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -200,12 +159,13 @@
       <workItem from="1558355715084" duration="132000" />
       <workItem from="1558359840571" duration="742000" />
       <workItem from="1558360977404" duration="1115000" />
-      <workItem from="1558362697854" duration="1255000" />
+      <workItem from="1558362697854" duration="2245000" />
+      <workItem from="1558530649168" duration="329000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7568000" />
+    <option name="totallyTimeSpent" value="8887000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -219,7 +179,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17857143" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18017058" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -234,12 +194,12 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.8619403" visible="true" weight="0.5178765" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.86034113" visible="true" weight="0.5178765" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.1380597" side_tool="true" visible="true" weight="0.5178765" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.13965885" side_tool="true" visible="true" weight="0.5178765" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" sideWeight="0.4989339" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49840087" weight="0.31852654" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -253,6 +213,51 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -274,14 +279,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-595">
+        <state relative-caret-position="272">
           <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/EmailSender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
+        <state relative-caret-position="952">
           <caret line="64" column="72" selection-start-line="64" selection-start-column="72" selection-end-line="64" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -292,7 +297,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/MongoSaver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
