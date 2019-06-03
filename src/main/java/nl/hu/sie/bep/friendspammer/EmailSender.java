@@ -14,29 +14,33 @@ import org.slf4j.LoggerFactory;
 
 class EmailSender {
 
+  private EmailSender() {
+    throw new IllegalStateException("Utility class");
+  }
+
   private static Session getSession() {
     Properties props = new Properties();
     props.put("mail.smtp.host", "smtp.mailtrap.io");
     props.put("mail.smtp.port", "2525");
     props.put("mail.smtp.auth", "true");
 
-    String username = "42c2290a3b08cb";
-    String password =  getEncryptedPass();
+
+    //PW staat er nu hardcoded in, maar dat zal je niet in productie willen. Beter uitlezen van een lokaal bestand zoals te zien op:
+    //https://wiki.sei.cmu.edu/confluence/display/java/MSC03-J.+Never+hard+code+sensitive+information
+    String us = "42c2290a3b08cb";
+    String code = "3befb4c6f8a5a1";
+
 
     return Session.getInstance(props,
       new javax.mail.Authenticator() {
         @Override
         protected PasswordAuthentication getPasswordAuthentication() {
-          return new PasswordAuthentication(username, password);
+          return new PasswordAuthentication(us, code);
         }
       });
   }
 
-  private static String getEncryptedPass() {
-      return "3befb4c6f8a5a1";
-  }
-
-  private static void sendEmail(String subject, String to, String messageBody, boolean asHtml) {
+  public static void sendEmail(String subject, String to, String messageBody, boolean asHtml) {
     final Logger logger = LoggerFactory.getLogger(EmailSender.class);
 
 		try {
@@ -62,7 +66,7 @@ class EmailSender {
     }
 	}
 
-	private static void sendEmail(String subject, String[] toList, String messageBody, boolean asHtml) {
+	public static void sendEmail(String subject, String[] toList, String messageBody, boolean asHtml) {
     final Logger logger = LoggerFactory.getLogger(EmailSender.class);
 		try {
 

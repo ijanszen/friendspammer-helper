@@ -11,6 +11,10 @@ import org.slf4j.LoggerFactory;
 
 class MongoSaver {
 
+  private MongoSaver() {
+    throw new IllegalStateException("Utility class");
+  }
+
   static boolean saveEmail(String to, String from, String subject, String text, Boolean html) {
 
     MongoClientURI uri = new MongoClientURI("mongodb+srv://ijans:Jean1ne!@cluster0-of0yn.azure.mongodb.net/test?retryWrites=true");
