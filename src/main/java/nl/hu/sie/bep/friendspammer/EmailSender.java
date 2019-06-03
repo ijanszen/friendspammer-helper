@@ -9,28 +9,39 @@ import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-public class EmailSender {
-	
-	public static void sendEmail(String subject, String to, String messageBody, boolean asHtml) {
+class EmailSender {
 
-		Properties props = new Properties();
-		props.put("mail.smtp.host", "smtp.mailtrap.io");
-		props.put("mail.smtp.port", "2525");
-		props.put("mail.smtp.auth", "true");
+  private static Session getSession() {
+    Properties props = new Properties();
+    props.put("mail.smtp.host", "smtp.mailtrap.io");
+    props.put("mail.smtp.port", "2525");
+    props.put("mail.smtp.auth", "true");
 
-		String username = "7a1eaba28156ea";
-		String password = "45e7c5f4925a9d";
+    String username = "42c2290a3b08cb";
+    String password =  getEncryptedPass();
 
-		Session session = Session.getInstance(props,
-				  new javax.mail.Authenticator() {
-					protected PasswordAuthentication getPasswordAuthentication() {
-						return new PasswordAuthentication(username, password);
-					}
-				  });
+    return Session.getInstance(props,
+      new javax.mail.Authenticator() {
+        @Override
+        protected PasswordAuthentication getPasswordAuthentication() {
+          return new PasswordAuthentication(username, password);
+        }
+      });
+  }
+
+  private static String getEncryptedPass() {
+      return "3befb4c6f8a5a1";
+  }
+
+  private static void sendEmail(String subject, String to, String messageBody, boolean asHtml) {
+    final Logger logger = LoggerFactory.getLogger(EmailSender.class);
+
 		try {
 
-			Message message = new MimeMessage(session);
+			Message message = new MimeMessage(getSession());
 			message.setFrom(new InternetAddress("spammer@spammer.com"));
 			message.setRecipients(Message.RecipientType.TO,
 				InternetAddress.parse(to));
@@ -42,35 +53,22 @@ public class EmailSender {
 				message.setText(messageBody);	
 			}
 			Transport.send(message);
+      logger.info("Done");
 
 			MongoSaver.saveEmail(to, "spammer@spamer.com", subject, messageBody, asHtml);
 
-		} catch (MessagingException e) {
-			throw new RuntimeException(e);
-		}
+    } catch (MessagingException e) {
+      throw new IllegalArgumentException("Destination address not known");
+    }
 	}
 
-	public static void sendEmail(String subject, String[] toList, String messageBody, boolean asHtml) {
-
-		Properties props = new Properties();
-		props.put("mail.smtp.host", "smtp.mailtrap.io");
-		props.put("mail.smtp.port", "2525");
-		props.put("mail.smtp.auth", "true");
-
-    String username = "42c2290a3b08cb";
-    String password = "3befb4c6f8a5a1";
-
-		Session session = Session.getInstance(props,
-				  new javax.mail.Authenticator() {
-					protected PasswordAuthentication getPasswordAuthentication() {
-						return new PasswordAuthentication(username, password);
-					}
-				  });
+	private static void sendEmail(String subject, String[] toList, String messageBody, boolean asHtml) {
+    final Logger logger = LoggerFactory.getLogger(EmailSender.class);
 		try {
 
 			for (int index = 0; index < toList.length; index++) {
 			
-				Message message = new MimeMessage(session);
+				Message message = new MimeMessage(getSession());
 				message.setFrom(new InternetAddress("spammer@spammer.com"));
 				message.setRecipients(Message.RecipientType.TO,
 					InternetAddress.parse(toList[index]));
@@ -82,13 +80,11 @@ public class EmailSender {
 					message.setText(messageBody);	
 				}
 				Transport.send(message);
-	
-				System.out.println("Done");
+				logger.info("Done");
 			}
 
-		} catch (MessagingException e) {
-			throw new RuntimeException(e);
-		}
-	}
-	
+    } catch (MessagingException e) {
+      throw new IllegalArgumentException("Destination address not known");
+    }
+  }
 }

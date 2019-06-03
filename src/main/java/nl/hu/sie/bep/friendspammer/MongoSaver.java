@@ -9,9 +9,9 @@ import org.bson.Document;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class MongoSaver {
+class MongoSaver {
 
-  public static boolean saveEmail(String to, String from, String subject, String text, Boolean html) {
+  static boolean saveEmail(String to, String from, String subject, String text, Boolean html) {
 
     MongoClientURI uri = new MongoClientURI("mongodb+srv://ijans:Jean1ne!@cluster0-of0yn.azure.mongodb.net/test?retryWrites=true");
     final Logger logger = LoggerFactory.getLogger(MongoSaver.class);
@@ -31,8 +31,8 @@ public class MongoSaver {
         .append("asHtml", html);
       c.insertOne(doc);
     } catch (MongoException mongoException) {
-      logger.info("XXXXXXXXXXXXXXXXXX ERROR WHILE SAVING TO MONGO XXXXXXXXXXXXXXXXXXXXXXXXXX");
-      mongoException.printStackTrace();
+      logger.debug("XXXXXXXXXXXXXXXXXX ERROR WHILE SAVING TO MONGO XXXXXXXXXXXXXXXXXXXXXXXXXX");
+      logger.error(mongoException.getMessage());
       success = false;
     }
 
