@@ -30,7 +30,6 @@ class EmailSender {
     String us = "42c2290a3b08cb";
     String code = "3befb4c6f8a5a1";
 
-
     return Session.getInstance(props,
       new javax.mail.Authenticator() {
         @Override

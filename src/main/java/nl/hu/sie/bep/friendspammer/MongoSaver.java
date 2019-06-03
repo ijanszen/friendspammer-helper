@@ -9,39 +9,43 @@ import org.bson.Document;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.Iterator;
+import java.util.List;
+
 class MongoSaver {
 
   private MongoSaver() {
     throw new IllegalStateException("Utility class");
   }
 
-  static boolean saveEmail(String to, String from, String subject, String text, Boolean html) {
+  private List<Email> getAllPreviouslySendEmails(){
+    List<Email> sendEmailList = null;
+    MongoCollection<Document> c = MongoConnection.getCollection();
+    Iterator<Document> it = c.find().iterator();
+    
+    while(it.hasNext())
+    {
+      Document e = it.next();
 
-    MongoClientURI uri = new MongoClientURI("mongodb+srv://ijans:Jean1ne!@cluster0-of0yn.azure.mongodb.net/test?retryWrites=true");
-    final Logger logger = LoggerFactory.getLogger(MongoSaver.class);
+      String to = (String) e.get("to");
+      String from = (String)e.get("from");
+      String subject = (String)e.get("subject");
+      String text = (String) e.get("text");
+      Boolean ashtml = (Boolean) e.get("asHtml");
 
-    boolean success = true;
+      Email email = new Email(to, from, subject, text, ashtml);
+      sendEmailList.add(email);
+    }
+    return sendEmailList;
+  }
 
-    try (MongoClient mongoClient = new MongoClient(uri)) {
-
-      MongoDatabase database = mongoClient.getDatabase("friendspammer");
-
-      MongoCollection<Document> c = database.getCollection("email");
-
+  static void saveEmail(String to, String from, String subject, String text, Boolean html) {
+    MongoCollection<Document> c = MongoConnection.getCollection();
       Document  doc = new Document ("to", to)
         .append("from", from)
         .append("subject", subject)
         .append("text", text)
         .append("asHtml", html);
       c.insertOne(doc);
-    } catch (MongoException mongoException) {
-      logger.debug("XXXXXXXXXXXXXXXXXX ERROR WHILE SAVING TO MONGO XXXXXXXXXXXXXXXXXXXXXXXXXX");
-      logger.error(mongoException.getMessage());
-      success = false;
-    }
-
-    return success;
-
   }
-
 }
