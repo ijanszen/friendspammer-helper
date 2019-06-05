@@ -1,14 +1,8 @@
 package nl.hu.sie.bep.friendspammer;
 
-import com.mongodb.MongoClient;
-import com.mongodb.MongoClientURI;
-import com.mongodb.MongoException;
 import com.mongodb.client.MongoCollection;
-import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -18,8 +12,8 @@ class MongoSaver {
     throw new IllegalStateException("Utility class");
   }
 
-  private List<Email> getAllPreviouslySendEmails(){
-    List<Email> sendEmailList = null;
+  public List<Email> getAllPreviouslySendEmails(){
+    List<Email> sendEmailList = new ArrayList<>();
     MongoCollection<Document> c = MongoConnection.getCollection();
     Iterator<Document> it = c.find().iterator();
     
