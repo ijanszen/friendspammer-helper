@@ -6,7 +6,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 
 	<groupId>nl.hu.bep.idris</groupId>
 	<artifactId>friendspammer-helper</artifactId>
-	<version>1.7</version>
+	<version>1.8</version>
 	<packaging>jar</packaging>
 
  

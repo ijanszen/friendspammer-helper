@@ -30,7 +30,7 @@ public class MongoConnection {
 
 
       try {
-        logger.info("About to connect to MongoDB @ {}" + uri.toString());
+        logger.info("About to connect to MongoDB @ {}", uri);
         mongo = new MongoClient(uri);
       } catch (MongoException ex ) {
         logger.error("An error occoured when connecting to MongoDB", ex);
