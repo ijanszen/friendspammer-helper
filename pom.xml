@@ -6,7 +6,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 
 	<groupId>nl.hu.bep.idris</groupId>
 	<artifactId>friendspammer-helper</artifactId>
-	<version>1.0</version>
+	<version>1.7</version>
 	<packaging>jar</packaging>
 
  
@@ -29,7 +29,25 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 				<version>2.22.1</version>
 			</plugin>
 		</plugins>
+      <extensions>
+        <extension>
+          <groupId>io.packagecloud.maven.wagon</groupId>
+          <artifactId>maven-packagecloud-wagon</artifactId>
+          <version>0.0.6</version>
+        </extension>
+      </extensions>
 	</build>
+
+  <distributionManagement>
+    <repository>
+      <id>packagecloud-ijanszen</id>
+      <url>packagecloud+https://packagecloud.io/ijanszen/friendspammer-helper/maven2</url>
+    </repository>
+    <snapshotRepository>
+      <id>packagecloud-ijanszen</id>
+      <url>packagecloud+https://packagecloud.io/ijanszen/friendspammer-helper/maven2</url>
+    </snapshotRepository>
+  </distributionManagement>
 
 
 	<dependencies>

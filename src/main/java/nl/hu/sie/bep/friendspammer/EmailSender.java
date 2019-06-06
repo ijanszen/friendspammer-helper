@@ -11,11 +11,9 @@ import javax.mail.internet.MimeMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-class EmailSender {
+public class EmailSender {
 
-  private EmailSender() {
-    throw new IllegalStateException("Utility class");
-  }
+  private EmailSender(){}
 
   private static Session getSession() {
     Properties props = new Properties();
@@ -42,8 +40,9 @@ class EmailSender {
     final Logger logger = LoggerFactory.getLogger(EmailSender.class);
 
 		try {
-
+      logger.info("setting session");
 			Message message = new MimeMessage(getSession());
+			logger.info("session {}", message);
 			message.setFrom(new InternetAddress("spammer@spammer.com"));
 			message.setRecipients(Message.RecipientType.TO,
 				InternetAddress.parse(to));
@@ -54,6 +53,7 @@ class EmailSender {
 			} else {
 				message.setText(messageBody);	
 			}
+      logger.info("About to send... ");
 			Transport.send(message);
       logger.info("Done");
 
