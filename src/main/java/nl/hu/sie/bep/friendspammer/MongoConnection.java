@@ -9,34 +9,30 @@ import org.bson.Document;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.List;
-
 public class MongoConnection {
 
   private MongoClient mongo = null;
   private static MongoConnection instance = new MongoConnection();
-  final Logger logger = LoggerFactory.getLogger(EmailSender.class);
+  final Logger logger = LoggerFactory.getLogger(MongoConnection.class);
 
-  private MongoConnection() {};
+  private MongoConnection() {}
 
-  public MongoClient getMongo() throws RuntimeException {
+  public MongoClient getMongo() {
     if (mongo == null) {
       logger.debug("Starting Mongo");
       MongoClientOptions.Builder options = MongoClientOptions.builder()
         .connectionsPerHost(4)
         .maxConnectionIdleTime((60 * 1_000))
         .maxConnectionLifeTime((120 * 1_000));
-      ;
 
       MongoClientURI uri = new MongoClientURI("mongodb+srv://ijans:Jean1ne!@cluster0-of0yn.azure.mongodb.net/test?retryWrites=true", options);
 
-      logger.info("About to connect to MongoDB @ " + uri.toString());
+
 
       try {
+        logger.info("About to connect to MongoDB @ {}" + uri.toString());
         mongo = new MongoClient(uri);
-      } catch (MongoException ex) {
-        logger.error("An error occoured when connecting to MongoDB", ex);
-      } catch (Exception ex) {
+      } catch (MongoException ex ) {
         logger.error("An error occoured when connecting to MongoDB", ex);
       }
     }
@@ -64,7 +60,7 @@ public class MongoConnection {
         mongo = null;
 
       } catch (Exception e) {
-        logger.error("An error occurred when closing the MongoDB connection\n%s", e.getMessage());
+        logger.error("An error occurred when closing the MongoDB connection\n%s, see {}", e.getMessage());
       }
     } else {
       logger.warn("mongo object was null, wouldn't close connection");

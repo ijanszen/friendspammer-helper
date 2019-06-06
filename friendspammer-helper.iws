@@ -1,20 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c5cfaa9-8ee8-4f7c-b3a8-023fea398692" name="Default Changelist" comment="Made email DTO&#10;Made a mongo connection class&#10;Changed mongo saver to use mongo conn">
-      <change beforePath="$PROJECT_DIR$/friendspammer-helper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/friendspammer-helper.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/friendspammer-helper.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/friendspammer-helper.ipr" afterDir="false" />
+    <list default="true" id="6c5cfaa9-8ee8-4f7c-b3a8-023fea398692" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/friendspammer-helper.iws" beforeDir="false" afterPath="$PROJECT_DIR$/friendspammer-helper.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/Email.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/EmailSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/EmailSender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/MongoConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/MongoConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/MongoSaver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/MongoSaver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/hu/sie/bep/friendspammer/EmailSender$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/hu/sie/bep/friendspammer/EmailSender$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/hu/sie/bep/friendspammer/EmailSender.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/hu/sie/bep/friendspammer/EmailSender.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/hu/sie/bep/friendspammer/MongoSaver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/hu/sie/bep/friendspammer/MongoSaver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/friendspammer-helper-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,7 +20,21 @@
     <favorites_list name="friendspammer-helper" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/MongoConnection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="431">
+              <caret line="62" column="87" selection-start-line="62" selection-start-column="87" selection-end-line="62" selection-end-column="87" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2138#2139#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -56,8 +59,8 @@
         <option value="$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/Email.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/EmailSender.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/MongoSaver.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/MongoConnection.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/MongoConnection.java" />
       </list>
     </option>
   </component>
@@ -86,10 +89,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="y" value="23" />
-    <option name="width" value="949" />
-    <option name="height" value="985" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -242,7 +245,7 @@
       <workItem from="1559561578019" duration="7859000" />
       <workItem from="1559570253916" duration="7819000" />
       <workItem from="1559730737569" duration="14162000" />
-      <workItem from="1559748858025" duration="2877000" />
+      <workItem from="1559748858025" duration="3719000" />
     </task>
     <task id="LOCAL-00001" summary="updated wercker.yml with sonar config">
       <created>1559562011362</created>
@@ -293,11 +296,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559731415561</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="A BUNCH of refactoring to make shit work">
+      <created>1559806954546</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1559806954550</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43043000" />
+    <option name="totallyTimeSpent" value="43885000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -310,6 +320,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49919224" visible="true" weight="0.14285715" />
       <window_info id="Structure" order="1" sideWeight="0.50080776" side_tool="true" weight="0.18550107" />
@@ -326,12 +337,12 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4989339" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.8544776" visible="true" weight="0.58504874" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.8544776" weight="0.58504874" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.40618336" side_tool="true" weight="0.3261105" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" sideWeight="0.4978678" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49200428" weight="0.31852654" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49200428" visible="true" weight="0.31852654" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.4978678" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -398,7 +409,8 @@
     <MESSAGE value="trying to solve code smells v.2" />
     <MESSAGE value="Made email DTO&#10;Made a mongo connection class&#10;Changed mongo saver to use mongo conn" />
     <MESSAGE value="Made it that mongosaver now save email object in email list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made it that mongosaver now save email object in email list" />
+    <MESSAGE value="A BUNCH of refactoring to make shit work" />
+    <option name="LAST_COMMIT_MESSAGE" value="A BUNCH of refactoring to make shit work" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -457,20 +469,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/MongoConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="30" column="63" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/hu/sie/bep/friendspammer/MongoConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="62" column="87" selection-start-line="62" selection-start-column="87" selection-end-line="62" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2138#2139#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
